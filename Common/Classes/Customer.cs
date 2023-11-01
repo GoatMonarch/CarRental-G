@@ -26,7 +26,7 @@ namespace Common.Classes;
 
     public string Identifier()
     {
-        string Identity = _FName + " " + _LName + " " + _Id;
+        string Identity = _FName + " " + _LName + " " + _SSN;
         return Identity;
     }
 
