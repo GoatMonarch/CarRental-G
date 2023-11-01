@@ -1,0 +1,14 @@
+[
+  {
+    "RegNo": "H52",
+    "OdoMeter": 600,
+    "Maker": "Saab",
+    "hired": "Available"
+  },
+  {
+    "RegNo": "C24",
+    "OdoMeter": 400,
+    "Maker": "Toyota",
+    "Hired": "Available"
+  }
+]

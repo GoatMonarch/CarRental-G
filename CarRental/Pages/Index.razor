@@ -1,0 +1,81 @@
+﻿@page "/"
+@using Business.Classes;
+@using Common.Interface;
+@inject Bookings b 
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">Regno</th>
+			<th scope="col">Maker</th>
+			<th scope="col">Odometer</th>
+			<th scope="col">Vehcle Type</th>
+			<th scope="col">Cost Km</th>
+			<th scope="col">$ Day</th>
+			<th scope="col">Status</th>
+		</tr>
+	</thead>
+	<tbody>
+			@foreach(IVechicle v in b.GetVechicle())
+			{
+		<tr>
+			<th scope="row">@v._RegNo</th>
+			<th scope="row">@v._Maker</th>	
+			<th scope="row">@v._Odometer</th>
+			<th scope="row">@v._VechicleType</th>
+			<th scope="row">@v._DriveCost</th>
+			<th scope="row">@v._Cost</th>
+			<th scope="row">@v._Hired</th>
+		</tr>
+			}
+	</tbody>
+</table>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">SSN</th>
+			<th scope="col">Last Name</th>
+			<th scope="col">First Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(IPerson p in b.GetPerson())
+		{
+		<tr>
+			<th scope="row">@p._SSN</th>
+			<th scope="row">@p._LName</th>
+			<th scope="row">@p._FName</th>
+		</tr>
+		}
+	</tbody>
+</table>
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">RegNo</th>
+						<th scope="col">Customer</th>
+						<th scope="col">Km rented</th>
+						<th scope="col">Km returned</th>
+						<th scope="col">Rented</th>
+						<th scope="col">Returned</th>
+						<th scope="col">Total Cost</th>
+						<th scope="col">Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach(IHiring h in b.GetHiring())
+					{
+					<tr>
+						<th scope="row">@h._Vechicle._RegNo</th>
+						<th scope="row">@h._Customer.Identifier()</th>
+						<th scope="row">@h._Vechicle._Odometer</th>
+						<th scope="row">@h._OdometerReturned</th>
+						<th scope="row">@h._DateHired</th>
+						<th scope="row">@h._DateReturned</th>
+						<th scope="row">@h._TotalCost</th>
+						<th scope="row">@h._Vechicle._Hired</th>
+					</tr>
+					}
+				</tbody>
+			</table>

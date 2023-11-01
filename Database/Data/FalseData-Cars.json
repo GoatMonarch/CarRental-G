@@ -1,0 +1,38 @@
+//This should technially be in wwwroot. Prettend this is a class file connected to a DB
+[
+  {
+    "RegNo": "B52",
+    "OdoMeter": 0.5,
+    "VType": "Van",
+    "Maker": "Nissan",
+    "Hired": "Available"
+  },
+  {
+    "RegNo": "B78",
+    "OdoMeter": 100.9,
+    "VType": "Van",
+    "Maker": "Volvo",
+    "Hired": "Available"
+  },
+  {
+    "RegNo": "A90",
+    "OdoMeter": 400.5,
+    "VType": "SUV",
+    "Maker": "Saab",
+    "Hired": "Hired"
+  },
+  {
+    "RegNo": "CH2",
+    "OdoMeter": 300.5,
+    "VType": "Sedan",
+    "Maker": "BMW",
+    "Hired": "Available"
+  },
+  {
+    "RegNo": "B22",
+    "OdoMeter": 800,
+    "VType": "Sedan",
+    "Maker": "BMW",
+    "Hired": "Hired"
+  }
+]

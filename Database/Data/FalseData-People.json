@@ -1,0 +1,28 @@
+[
+  {
+    "SSN": 123456,
+    "FName": "Barak",
+    "LName": "Obama"
+  },
+  {
+    "SSN": 456123,
+    "FName": "John",
+    "LName": "Kennedy"
+  },
+  {
+    "SSN": 142536,
+    "FName": "James",
+    "LName": "Garfield"
+  },
+  {
+    "SSN": 160124,
+    "FName": "Donald",
+    "LName": "Trump"
+  },
+  {
+    "SSN": 870456,
+    "FName": "Abraham",
+    "LName": "Linkon"
+  }
+
+]
